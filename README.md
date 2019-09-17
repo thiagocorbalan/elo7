@@ -1,2 +1,3 @@
-# elo7
-Pequeno projeto de landing page para anunciar as vagas em aberto da Elo7.
+# Elo7
+Landing Page para anuncio das vagas em aberto da Elo7.
+

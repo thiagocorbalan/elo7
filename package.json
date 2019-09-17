@@ -1,0 +1,9 @@
+{
+  "name": "elo7",
+  "version": "1.0.0",
+  "description": "Landing Page para anuncio das vagas em aberto da Elo7.",
+  "main": "index.js",
+  "repository": "https://github.com/thiagocorbalan/elo7.git",
+  "author": "Thiago Corbalan",
+  "license": "MIT"
+}
