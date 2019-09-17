@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px"
+	 height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<g id="Layer_1">
+	<image overflow="visible" width="150" height="150" xlink:href="qualidade.png" >
+	</image>
+</g>
+<g id="Atividades">
+	<g>
+		<circle fill="#FDB933" cx="75" cy="75.001" r="74.669"/>
+		<path fill="#F9A90E" d="M82.75,40.749c-23.196,0-42.001,18.805-42.001,42.001s18.805,42.001,42.001,42.001
+			s42.001-18.805,42.001-42.001S105.946,40.749,82.75,40.749z"/>
+		<path fill="#FFFFFF" d="M75,32.999c-23.196,0-42.001,18.805-42.001,42.001S51.804,117.001,75,117.001S117.001,98.196,117.001,75
+			S98.196,32.999,75,32.999z M55.5,75.313c0-2.589,2.099-4.688,4.688-4.688s4.688,2.099,4.688,4.688S62.776,80,60.188,80
+			S55.5,77.901,55.5,75.313z M75,99.792c-13.472,0-14.871-13.912-14.871-13.912c0-1.052,0.898-1.904,2.006-1.904
+			c0,0,6.37,2.316,12.865,2.316s12.865-2.316,12.865-2.316c1.107,0,2.006,0.853,2.006,1.904C89.871,85.88,88.954,99.792,75,99.792z
+			 M89.75,80c-2.589,0-4.688-2.099-4.688-4.688s2.099-4.688,4.688-4.688s4.688,2.099,4.688,4.688S92.339,80,89.75,80z"/>
+	</g>
+</g>
+</svg>
