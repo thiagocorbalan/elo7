@@ -1,9 +1,42 @@
 {
-  "name": "elo7",
-  "version": "1.0.0",
-  "description": "Landing Page para anuncio das vagas em aberto da Elo7.",
-  "main": "index.js",
-  "repository": "https://github.com/thiagocorbalan/elo7.git",
-  "author": "Thiago Corbalan",
-  "license": "MIT"
+	"name": "elo7",
+	"version": "1.0.0",
+	"description": "Landing Page para anuncio das vagas em aberto da Elo7.",
+	"main": "index.js",
+	"repository": "https://github.com/thiagocorbalan/elo7.git",
+	"author": "Thiago Corbalan",
+	"license": "MIT",
+	"scripts": {
+		"start": "gulp && gulp webserver",
+		"dev": "gulp dev"
+	},
+	"dependencies": {
+		"axios": "^0.19.0",
+		"body-parser": "^1.19.0",
+		"bootstrap": "^4.3.1",
+		"cors": "^2.8.5",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.6.0",
+		"@babel/preset-env": "^7.6.0",
+		"@babel/register": "^7.6.0",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean": "^0.4.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-connect": "^5.7.0",
+		"gulp-html-minifier": "^0.1.8",
+		"gulp-imagemin": "^6.1.0",
+		"gulp-minify": "^3.1.0",
+		"gulp-minify-css": "^1.2.4",
+		"gulp-plumber": "^1.2.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-terser": "^1.2.0",
+		"gulp-uglify": "^3.0.2",
+		"gulp-watch": "^5.0.1",
+		"gulp-webserver": "^0.9.1",
+		"nodemon": "^1.19.1"
+	}
 }
