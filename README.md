@@ -15,7 +15,7 @@ Projeto de Landing Page para anuncio das vagas em aberto da Elo7.
 7. Estilização Mobile ✔
 8. Estilização Desktop ✔
 9. Implementação do JS para consulta no servidor via Ajax ✔
-10. Preencher os dados na página
+10. Preencher os dados na página ✔
 11. Criação do Servidor Node
 12. Criação de teste Jasmine simples
 

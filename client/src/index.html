@@ -127,32 +127,26 @@
 				</section>
 
 
-				<section class="job-area">
+				<section class="job-area" v-if="jobs">
 					<img src="./assets/images/foto-bottom.jpg" class="photo-bottom" alt="Foto feira de artesanato">
 					<h2>Vagas em aberto</h2>
 
 					<h3>Desenvolvimento</h3>
 
 					<div class="job-list">
-						<div class="job-item">
+						<div class="job-item" v-for="job in jobs" v-if="job.ativa">
 							<span class="job-title">
-								<a href="javascript:void(0)" class="btn btn-link">Desenvolvedor Mobile Senior (Android e iOS)</a>
+								<a :href="job.link" class="btn btn-link">{{ job.cargo }}</a>
 							</span>
-							<span class="job-location">Vila Olímpia - São Paulo, Brasil</span>
-						</div>
 
-						<div class="job-item">						
-							<span class="job-title">
-								<a href="javascript:void(0)" class="btn btn-link">Desenvolvedor Java Senior</a>
+							<span class="job-location" v-if="job.localizacao">
+								{{ job.localizacao.bairro }} - {{ job.localizacao.cidade }}, {{ job.localizacao.pais }}
 							</span>
-							<span class="job-location">Vila Olímpia - São Paulo, Brasil</span>
-						</div>
 
-						<div class="job-item">
-							<span class="job-title">
-								<a href="javascript:void(0)" class="btn btn-link">Desenvolvedor Front-End</a>
+							<span class="job-location" v-if="!job.localizacao">
+								Remoto
 							</span>
-							<span class="job-location">Vila Olímpia - São Paulo, Brasil</span>
+
 						</div>
 					</div>
 				</section>
