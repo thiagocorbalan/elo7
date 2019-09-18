@@ -97,7 +97,7 @@ const client = gulp.series(clientHtml, clientJS, clientSass, clientImage, client
 // Compilador automático
 const watchFiles = () => {
 	watch('./client/src/assets/js/**/*.js',{verbose: true }, clientJS);
-	watch('./client/src/assets/scss/style.scss',{verbose: true }, clientSass);
+	watch('./client/src/assets/scss/*.scss',{verbose: true }, clientSass);
 	watch('./client/src/index.html',{verbose: true }, clientHtml);
 };
 

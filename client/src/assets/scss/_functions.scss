@@ -1,0 +1,20 @@
+/**
+*   Functions
+*
+*   @project:       Elo7 Landing Page
+*   @version:       1.0.0
+*   @description:   Aqui estão algumas functions para que axiliará no desenvolvimento do layout
+*   @author:        Thiago Corbalan
+*   @date:          17/09/2019
+*   @update:        ---
+*/
+
+@function em($sizeValue, $sizebase: 16px) {
+    @if(unitless($sizeValue)) {
+        $sizeValue: $sizeValue * 1px;
+    }
+    @if(unitless($sizebase)) {
+        $sizebase: $sizebase * 1px;
+    }
+    @return $sizeValue/$sizebase * 1em;
+}

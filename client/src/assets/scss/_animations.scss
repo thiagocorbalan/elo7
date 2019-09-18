@@ -1,0 +1,14 @@
+/**
+*   Animation
+*
+*   @project:       Elo7 Landing Page
+*   @version:       1.0.0
+*   @description:   Aqui estão alguns mixins que axiliará no desenvolvimento
+*   @author:        Thiago Corbalan
+*   @date:          16/09/2019
+*   @update:        ---
+*/
+@include keyframes(slideRight) {
+    from { @include transform(translateX(0)) }
+    to { @include transform(translateX(30%)) }
+}
