@@ -1,11 +1,9 @@
 @import './../../../../node_modules/bootstrap/scss/bootstrap-reboot';
 
-@import "mixins";
-@import "functions";
-@import "variables";
-@import "animations";
-
- 
+@import 'mixins';
+@import 'functions';
+@import 'variables';
+@import 'animations';
 
 @include font-face($font-family, 'MuseoSans-100', $font-weight: 100);
 @include font-face($font-family, 'MuseoSans-300', $font-weight: 300);
@@ -14,226 +12,341 @@
 
 
 body {
-	font-family: $font-family, sans-serif;
-	font-weight: 300;
-	font-size: 100%;
-	color: map-get($color-palette, C500);
+    font-family: $font-family, sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    color: map-get($color-palette, C500);
 }
 
 ::-moz-selection {
-	color: map-get($color-palette, C800);
-	background: map-get($color-palette, C700);
+    color: map-get($color-palette, C800);
+    background: map-get($color-palette, C700);
 }
-  
+
 ::selection {
-	color: map-get($color-palette, C800);;
-	background:map-get($color-palette, C700);
+    color: map-get($color-palette, C800);
+    ;
+    background: map-get($color-palette, C700);
 }
 
-h2, h3{
-	text-transform: uppercase;
-	font-weight: 700;
+h1 {
+    font-weight: 700;
+    font-size: em(52px);
 }
 
-h2{
-	font-size: em(20px);
-	line-height: em(20px);
-	margin-bottom: em(50px);
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-h3{
-	font-size: em(18px);
+h2 {
+    font-size: em(20px);
+    line-height: em(20px);
+    margin-bottom: em(50px);
 }
 
-.d-grid{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-}
-
-.container{
-	max-width: em(860px);
-	margin: 0 auto;
-}
-
-.btn{
-
-	&.btn-link{
-		font-size: em(18px);
-		color: map-get($color-palette, C600);
-		font-weight: 500;
-
-		&.btn-more{
-			padding: em(22px) em(36px);
-			text-transform: uppercase;
-			display: inline-block;
-			position: relative;
-			border-top: 2px solid map-get($color-palette, C400);
-
-
-			&::after{
-				content:"\00bb";
-				font-size: em(18px);
-				margin-left: .2em;
-				position: absolute;
-				line-height: em(20px);
-
-				@include transition(all .1s ease-in-out);
-			}
-
-			&:hover{
-				text-decoration: none;
-
-				&::after{
-					@include animation(slideRight .2s alternate infinite);
-				}
-			}
-		}
-
-	}
+h3 {
+    font-size: em(18px);
 }
 
 
 
-header{
-	text-align: center;
-
-	.header-image{
-		height: 450px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: url('/assets/images/foto-header.jpg') no-repeat center center;
-
-		.main-title{
-			font-weight: 700;
-			font-size: em(52px);
-			color: white;
-			margin-top: em(50px);
-			text-shadow: 0 5px 5px rgba( map-get($color-palette, C100),.5);
-		}
-	}
-	
-	.header-description{
-		margin-top: em(35px);
-	}
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-article{
-	.main-content{
-		background: map-get($color-palette, C300);
-		padding: em(50px) 0;
-		margin: em(27px) 0;
+.container {
+    max-width: em(860px);
+    margin: 0 auto;
+    padding: 0 1em;
+}
 
-		section.video-area{
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 50px;
+.btn.btn-link {
+    font-size: em(18px);
+    color: map-get($color-palette, C600);
+    font-weight: 500;
 
-			h2 {
-				margin-bottom: em(40px);
-				> div{
-					text-transform: initial;
-					font-style: italic;
-					font-weight: 500;
-					color:  map-get($color-palette, C700);
-				}
+    &.btn-more {
+        padding: em(22px) em(36px);
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        border-top: 2px solid map-get($color-palette, C400);
 
-			}
-		}
 
-		section.team-area{
-			margin-top: em(45px);
-			h2{
-				text-align: center;
-				text-transform: uppercase;
-				line-height: em(18px);
-				font-weight: 700;
-			}
+        &::after {
+            content: "\00bb";
+            font-size: em(18px);
+            margin-left: .2em;
+            position: absolute;
+            line-height: em(20px);
 
-			.team{
-				grid-template-columns: repeat(4, 1fr);
-				grid-gap: em(10px);
+            @include transition(all .1s ease-in-out);
+        }
 
-				.team-item{
-					display: flex;
+        &:hover {
+            text-decoration: none;
 
-					position: relative;
-					img{ max-width: 100%; }
+            &::after {
+                @include animation(slideRight .2s alternate infinite);
+            }
+        }
+    }
+}
 
-					.team-description{
-						position: absolute;
-						top: 0;
-						left: 0;
-						width: 100%;
-						height: 100%;
-						background: rgba( map-get($color-palette, C700),.2);
-						display: flex;
-						justify-content: center;
-						align-items: center;
 
-						@include transition( all .3s ease-in-out);
-											
-						@include border-radius(100%);
-						@include transform(scale(.1));
-						@include opacity(0);
 
-						.team-text{
-							margin-top: 30%;
-							font-weight: 700;
-							color: map-get($color-palette, C200);
-							font-size: em(20px);
-							text-shadow: 0 5px 5px rgba( map-get($color-palette, C100),.5);
-						}
-					}
 
-					&:hover .team-description{
-						@include border-radius(0);
-						@include transform(scale(1));
-						@include opacity(1);
-					}
-				}
-			}
-		}
+header {
+    text-align: center;
 
-	}
-	section.differentials-area{
-		text-align: center;
+    .header-image {
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('/assets/images/foto-header.jpg') no-repeat center center;
 
-		.differentials-container{
-			justify-items: center;
-			grid-gap: em(40px);
+        .main-title {
+            color: white;
+            margin-top: em(50px);
+            text-shadow: 0 5px 5px rgba(map-get($color-palette, C100), .5);
+        }
+    }
 
-			h3{ margin: em(30px) 0 em(40px); }
+    .header-description {
+        margin-top: em(35px);
+    }
+}
 
-			.differentials-item p{
-				text-align: justify;
-				
-			}
-			
-		}
-	}
+article {
+    .main-content {
+        background: map-get($color-palette, C300);
+        padding: em(50px) 0;
+        margin: em(27px) 0;
 
-	section.job-area{
-		margin-bottom: em(40px);
-		
-		.photo-bottom{
-			margin-bottom: em(50px);
-		}
+        section.video-area {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 50px;
 
-		h2{ text-align: center; }
+            @media screen and (max-width: map-get($grid-breakpoints, md)) {
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                text-align: center;
 
-		h3 { margin-bottom: em(40px); }
+                p {
+                    max-width: 75%;
+                    margin: auto auto 1rem;
+                }
+            }
 
-		.job-list{
-			display: grid;
-			grid-template-columns: 1fr;
+            h2 {
+                margin-bottom: em(40px);
 
-			.job-item{
-				font-size: em(18px);
-				display: flex;
+                >div {
+                    text-transform: initial;
+                    font-style: italic;
+                    font-weight: 500;
+                    color: map-get($color-palette, C700);
+                }
 
-				.job-title{ flex: 1;}
-			}
-		}
+            }
+        }
 
-	}
+        section.team-area {
+            margin-top: em(45px);
+
+            h2 {
+                text-align: center;
+                text-transform: uppercase;
+                line-height: em(18px);
+                font-weight: 700;
+            }
+
+            .team {
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: em(20px);
+
+                .team-item {
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+                    text-align: center;
+
+
+                    .photo img {
+                        max-width: 100%;
+                        //@include border-radius(50%);
+                    }
+
+
+                    .team-description .team-text {
+                        font-weight: 500;
+                        margin: 1em 0;
+                    }
+                }
+
+                @media screen and (max-width: map-get($grid-breakpoints, md)) {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+            }
+        }
+
+    }
+
+    section.differentials-area {
+        text-align: center;
+
+        .differentials-container {
+            justify-items: center;
+            grid-gap: em(40px);
+
+            h3 {
+                margin: em(30px) 0 em(40px);
+            }
+
+            .differentials-item {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    section.job-area {
+        margin-bottom: em(40px);
+
+        .photo-bottom {
+            margin-bottom: em(50px);
+            max-width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            margin-bottom: em(40px);
+        }
+
+        .job-list {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .job-item {
+                display: flex;
+
+                .job-title {
+                    flex: 1;
+                }
+
+                .job-title,
+                .job-location {
+                    font-size: em(18px);
+                }
+
+            }
+
+            @media screen and (max-width: map-get($grid-breakpoints, md)) {
+                margin-bottom: 2em;
+
+                .job-item {
+                    flex-direction: column;
+                    margin-bottom: 1.6em;
+
+                    .job-title,
+                    .job-location {
+                        font-size: 1em;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: map-get($grid-breakpoints, sm)) {
+    h1 {
+        font-size: em(32px);
+    }
+
+    h2 {
+        margin-bottom: 2em;
+    }
+
+    address,
+    dl,
+    ol,
+    p,
+    pre,
+    ul {
+        margin-bottom: 1.5rem;
+    }
+
+    .btn.btn-link {
+        font-size: 1em;
+    }
+
+    header {
+        .header-image .main-title {
+            margin-top: em(120px);
+        }
+
+        .header-description {
+            margin-top: 1em;
+        }
+    }
+
+    article {
+        .main-content {
+            padding: 1em 0;
+            margin: 2em 0;
+
+            section.video-area {
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                text-align: center;
+
+                p {
+                    max-width: initial;
+                }
+
+
+
+                .youtube-container {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+            }
+
+            section.team-area {
+                .team {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+
+        section.differentials-area {
+
+            .differentials-container {
+                grid-template-columns: 1fr;
+                grid-gap: 0;
+
+                h3 {
+                    margin: 1em 0;
+                }
+
+                .differentials-item img {
+                    width: 30%;
+                }
+            }
+        }
+    }
 }

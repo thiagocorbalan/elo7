@@ -19,7 +19,17 @@ $color-palette: (
 	C600: #339999,
   	C700: #fdb933,
   	C800: #333
-);
+) !default;
+
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
 
 
-$font-family: 'Museu Sans';  
+
+$font-family: 'Museu Sans';
