@@ -80,6 +80,15 @@ const clientHtml = () => {
 		.pipe(gulp.dest("./client/public"));
 };
 
+// Environment
+export const clientEnv = () => {
+	const env = (process.env.NODE_ENV || 'dev').trim();	
+
+	return gulp.src(`./client/src/config/env.${env}.js`)
+		.pipe(rename("environment.js"))
+		.pipe(gulp.dest("./client/public"))
+}
+
 // Gulp Server
 export const webserver = () => {
 	return gulp.src("./client/public")
@@ -92,7 +101,7 @@ export const webserver = () => {
 };
 
 
-const client = gulp.series(clientHtml, clientJS, clientSass, clientImage, clientFonts);
+const client = gulp.series(clientHtml, clientJS, clientSass, clientImage, clientFonts, clientEnv);
 
 // Compilador automático
 const watchFiles = () => {

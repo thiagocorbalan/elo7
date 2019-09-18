@@ -7,11 +7,11 @@
 	"author": "Thiago Corbalan",
 	"license": "MIT",
 	"scripts": {
-		"start": "yarn install && gulp && gulp webserver",
-		"dev": "gulp dev"
+		"dev": "set NODE_ENV=dev && gulp dev",
+		"prod": "set NODE_ENV=prod && gulp",
+		"start": "yarn install && yarn prod && gulp webserver"
 	},
 	"dependencies": {
-		"axios": "^0.19.0",
 		"body-parser": "^1.19.0",
 		"bootstrap": "^4.3.1",
 		"cors": "^2.8.5",
