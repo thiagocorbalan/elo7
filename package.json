@@ -7,7 +7,7 @@
 	"author": "Thiago Corbalan",
 	"license": "MIT",
 	"scripts": {
-		"start": "gulp && gulp webserver",
+		"start": "yarn install && gulp && gulp webserver",
 		"dev": "gulp dev"
 	},
 	"dependencies": {
