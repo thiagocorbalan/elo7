@@ -42,7 +42,7 @@ const clientSass = () => {
 };
 
 // IMAGES
-export const clientImage = () => {
+const clientImage = () => {
 	return gulp.src("./client/src/assets/images/**/*")
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(minifyIMG([
@@ -57,7 +57,12 @@ export const clientImage = () => {
 			svgoPlugins: [{ removeViewBox: true }],
 			verbose: true
 		}))
-		.pipe(gulp.dest("./client/public/assets"))
+		.pipe(gulp.dest("./client/public/assets/images"))
+};
+
+const clientFonts = () => {
+	return gulp.src("./client/src/assets/fonts/*.{ttf,woff,svg,eot}")
+		.pipe(gulp.dest("./client/public/assets/fonts"))
 };
 
 // HTML
@@ -87,7 +92,7 @@ export const webserver = () => {
 };
 
 
-const client = gulp.series(clientHtml, clientJS, clientSass, clientImage);
+const client = gulp.series(clientHtml, clientJS, clientSass, clientImage, clientFonts);
 
 // Compilador automático
 const watchFiles = () => {

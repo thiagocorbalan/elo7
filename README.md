@@ -11,7 +11,7 @@ Projeto de Landing Page para anuncio das vagas em aberto da Elo7.
 3. Criação da Estrutura ✔
 4. Tratamento das imagens ✔
 5. Configuração do Gulp para Deploy do SASS, JS, IMAGENS e HTML ✔
-6. Criação da Estrutura HTML
+6. Criação da Estrutura HTML ✔
 7. Estilização Mobile
 8. Estilização Desktop
 9. Implementação do JS para consulta no servidor via Ajax
