@@ -127,28 +127,30 @@
 				</section>
 
 
-				<section class="job-area" v-if="jobs">
+				<section class="job-area">
 					<img src="./assets/images/foto-bottom.jpg" class="photo-bottom" alt="Foto feira de artesanato">
-					<h2>Vagas em aberto</h2>
 
-					<h3>Desenvolvimento</h3>
+					<template v-if="jobs.length > 0">						
+						<h2>Vagas em aberto</h2>
 
-					<div class="job-list">
-						<div class="job-item" v-for="job in jobs" v-if="job.ativa">
-							<span class="job-title">
-								<a :href="job.link" class="btn btn-link">{{ job.cargo }}</a>
-							</span>
+						<h3>Desenvolvimento</h3>
+						<div class="job-list">
+							<div class="job-item" v-for="job in jobs" v-if="job.ativa">
+								<span class="job-title">
+									<a :href="job.link" class="btn btn-link">{{ job.cargo }}</a>
+								</span>
 
-							<span class="job-location" v-if="job.localizacao">
-								{{ job.localizacao.bairro }} - {{ job.localizacao.cidade }}, {{ job.localizacao.pais }}
-							</span>
+								<span class="job-location" v-if="job.localizacao">
+									{{ job.localizacao.bairro }} - {{ job.localizacao.cidade }}, {{ job.localizacao.pais }}
+								</span>
+								
+								<span class="job-location" v-if="!job.localizacao">
+									Remoto
+								</span>
 
-							<span class="job-location" v-if="!job.localizacao">
-								Remoto
-							</span>
-
+							</div>
 						</div>
-					</div>
+					</template>
 				</section>
 
 			</div>
