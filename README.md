@@ -32,7 +32,7 @@ Difícil heim?!
 Bom, esse comando instalará todas as dependências do projeto, exatamente como o comando de `dev` porém o servidor será o endereço da API de produção, e basicamente gerará os arquivos estáticos prontos para serem publicados em produção.
 
 ## Stack utilizada
-|     		 |             |
+|    package		 |  version           |
 |------------|-------------|
 | Bootstrap  | 4.3.1       |
 | Express    | 4.17.1      |
@@ -67,10 +67,10 @@ Algumas imagens, foram transformadas em SVG para ganhar maior qualidade e melhor
 ### **Implementação do JavaScript**
 Apesar da funcionalidade ser simples, acabei optando por utilizar o [VueJS](https://vuejs.org/) para demonstrar o quanto é importante conhecer algumas bibliotecas SPA leves e poder utiliza-las de forma bem simples para resolver problemas comuns do nosso dia-a-dia sem perder performace e qualidade. 
 
-## Uso do NodeJS
+### Uso do NodeJS
 O objetivo de ter criado um servidor node, foi para demonstrar, além do pouco de conhecimento sobre essa tecnologia, a organização e arquitetura criada nesse projeto, por mais simples que seja.
 
-## Testes
+### Testes
 Infelizmente os testes é algo que ainda estou aprimorando meus conhecimentos e por esse motivo não foi criado nesse projeto. :( 
 
 ## Obrigado e até a próxima ;)
