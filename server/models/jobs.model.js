@@ -21,7 +21,7 @@ module.exports = {
 						status: 202
 					})
 				}
-				resolve(data.vagas);
+				resolve(data);
 			})
 
 		}catch(Error){

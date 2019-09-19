@@ -6,10 +6,10 @@ const mainApp = new Vue({
 		jobs: []
 	},
 	mounted () {
-		fetch(config.API + '/vagas')
+		fetch(config.API)
 		  .then(response => response.json() )
 		  .then( jobs => {
-			  this.jobs = jobs
+			  this.jobs = jobs.vagas
 		  })
 	  }
 })
