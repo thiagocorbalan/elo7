@@ -43,18 +43,18 @@ Bom, esse comando instalará todas as dependências do projeto, exatamente como 
 
 ## Checklist das etapas do Projeto
 
-1. Criação do Repositório ✔
-2. Pareamento do Versionamento ✔
-3. Criação da Estrutura ✔
-4. [Tratamento das imagens](#tratamento-das-imagens) ✔
-5. Configuração do Gulp para Deploy do SASS, JS, IMAGENS e HTML ✔
-6. Criação da Estrutura HTML ✔
-7. Estilização Mobile ✔
-8. Estilização Desktop ✔
-9. [Implementação do JS para consulta no servidor via Ajax](#implementação-do-javascript) ✔
-10. Preencher os dados na página ✔
-11. [Criação do Servidor Node](#Uso-do-NodeJS) ✔
-12. Criação de teste Jasmine simples 
+1. Criação do Repositório ✔️
+2. Pareamento do Versionamento ✔️
+3. Criação da Estrutura ✔️
+4. [Tratamento das imagens](#tratamento-das-imagens) ✔️
+5. Configuração do Gulp para Deploy do SASS, JS, IMAGENS e HTML ✔️
+6. Criação da Estrutura HTML ✔️
+7. Estilização Mobile ✔️
+8. Estilização Desktop ✔️
+9. [Implementação do JS para consulta no servidor via Ajax](#implementação-do-javascript) ✔️
+10. Preencher os dados na página ✔️
+11. [Criação do Servidor Node](#Uso-do-NodeJS) ✔️
+12. Criação de teste Jasmine simples ❌
 
 
 ### **Tratamento das imagens**
