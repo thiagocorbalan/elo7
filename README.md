@@ -38,7 +38,7 @@ Bom, esse comando instalará todas as dependências do projeto, exatamente como 
 | Express    | 4.17.1      |
 | NodeJS     | 12.8.0      |
 | VueJS      | 2.6.10      |
-| Yarn   	 | 1.17.3      |
+| Yarn   	   | 1.17.3      |
 
 
 ## Checklist das etapas do Projeto
